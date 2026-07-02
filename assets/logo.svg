@@ -1,27 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="320" height="80"
-     viewBox="0 0 320 80">
+     width="360" height="90"
+     viewBox="0 0 360 90">
 
-  <!-- Hintergrund transparent, kein <rect> nötig -->
-
-  <!-- Formel-Text -->
-  <text x="20" y="50"
+  <!-- Formel -->
+  <text x="20" y="60"
         font-family="Times New Roman, serif"
-        font-size="32"
+        font-size="40"
         fill="black">
     R = β C
   </text>
 
-  <!-- Exponent 7 -->
-  <text x="205" y="32"
+  <!-- Exponent 7: absolut positioniert -->
+  <text x="215" y="32"
         font-family="Times New Roman, serif"
-        font-size="20"
+        font-size="26"
         fill="black">
     7
   </text>
 
-  <!-- Rahmen (optional, wie boxed-Formel) -->
-  <rect x="10" y="15" width="300" height="50"
+  <!-- Rahmen (optional) -->
+  <rect x="10" y="20" width="340" height="50"
         fill="none"
         stroke="black"
         stroke-width="1" />
