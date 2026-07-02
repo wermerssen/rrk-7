@@ -10,8 +10,8 @@
     R = β C
   </text>
 
-  <!-- Exponent 7: absolut positioniert -->
-  <text x="215" y="32"
+  <!-- Exponent 7: korrigierte Position -->
+  <text x="205" y="36"
         font-family="Times New Roman, serif"
         font-size="26"
         fill="black">
