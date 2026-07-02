@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1000" height="500"
+     viewBox="0 0 1000 500">
+
+    <!-- Marker definitions -->
+    <defs>
+        <marker id="arrow-blue"
+                markerWidth="10" markerHeight="10"
+                refX="8" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6 Z" fill="#0055CC"/>
+        </marker>
+
+        <marker id="arrow-green"
+                markerWidth="10" markerHeight="10"
+                refX="8" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6 Z" fill="#228833"/>
+        </marker>
+    </defs>
+
+    <!-- Background -->
+    <rect x="0" y="0" width="1000" height="500" fill="white"/>
+
+    <!-- Title -->
+    <text x="500" y="42"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="22" fill="#000000">
+        RRK‑7 — System Architecture
+    </text>
+
+    <!-- Module positions -->
+    <!-- M1 -->
+    <rect x="80" y="220" width="110" height="60"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="135" y="255"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">M₁</text>
+
+    <!-- M2 -->
+    <rect x="220" y="220" width="110" height="60"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="275" y="255"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">M₂</text>
+
+    <!-- M3 -->
+    <rect x="360" y="220" width="110" height="60"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="415" y="255"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">M₃</text>
+
+    <!-- M4 -->
+    <rect x="500" y="220" width="110" height="60"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="555" y="255"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">M₄</text>
+
+    <!-- M5 -->
+    <rect x="640" y="220" width="110" height="60"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="695" y="255"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">M₅</text>
+
+    <!-- M6 -->
+    <rect x="780" y="220" width="110" height="60"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="835" y="255"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">M₆</text>
+
+    <!-- M7 (central integrator) -->
+    <rect x="500" y="340" width="110" height="60"
+          fill="none" stroke="#0055CC" stroke-width="1.5"/>
+    <text x="555" y="375"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16" fill="#0055CC">M₇</text>
+
+    <!-- Coupling arrows (horizontal) -->
+    <line x1="190" y1="250" x2="220" y2="250"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+
+    <line x1="330" y1="250" x2="360" y2="250"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+
+    <line x1="470" y1="250" x2="500" y2="250"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+
+    <line x1="610" y1="250" x2="640" y2="250"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+
+    <line x1="750" y1="250" x2="780" y2="250"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+
+    <!-- Vertical coupling to M7 -->
+    <line x1="555" y1="280" x2="555" y2="340"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+
+    <!-- Recursive feedback loop (M7 → M1) -->
+    <path d="M555 340
+             C555 160, 135 160, 135 220"
+          fill="none"
+          stroke="#228833"
+          stroke-width="1.5"
+          marker-end="url(#arrow-green)" />
+
+    <text x="350" y="150"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#228833">
+        recursive feedback
+    </text>
+
+    <!-- Subtitle -->
+    <text x="500" y="470"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14" fill="#333333">
+        Seven-module RRK‑7 architecture with horizontal coupling and a global recursive feedback loop.
+    </text>
+
+</svg>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1000" height="650"
+     viewBox="0 0 1000 650">
+
+    <!-- Marker definitions -->
+    <defs>
+        <marker id="arrow-blue"
+                markerWidth="10" markerHeight="10"
+                refX="8" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6 Z" fill="#0055CC"/>
+        </marker>
+
+        <marker id="arrow-green"
+                markerWidth="10" markerHeight="10"
+                refX="8" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6 Z" fill="#228833"/>
+        </marker>
+
+        <marker id="arrow-red"
+                markerWidth="10" markerHeight="10"
+                refX="8" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6 Z" fill="#AA0000"/>
+        </marker>
+    </defs>
+
+    <!-- Background -->
+    <rect x="0" y="0" width="1000" height="650" fill="white"/>
+
+    <!-- Title -->
+    <text x="500" y="50"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="22" fill="#000000">
+        RRK‑7 — Operator Ontology
+    </text>
+
+    <!-- Central Operator: β -->
+    <rect x="430" y="120" width="140" height="70"
+          fill="none" stroke="#AA0000" stroke-width="1.5"/>
+    <text x="500" y="160"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="20" fill="#AA0000">
+        β
+    </text>
+
+    <!-- Transformation Operators -->
+    <rect x="150" y="260" width="220" height="70"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="260" y="300"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">
+        Transformation Operators
+    </text>
+
+    <!-- Meta‑Operators -->
+    <rect x="630" y="260" width="220" height="70"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="740" y="300"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">
+        Meta‑Operators
+    </text>
+
+    <!-- Structures -->
+    <rect x="150" y="420" width="220" height="70"
+          fill="none" stroke="#0055CC" stroke-width="1.5"/>
+    <text x="260" y="460"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16" fill="#0055CC">
+        Structures (S₁…Sₙ)
+    </text>
+
+    <!-- Dynamics -->
+    <rect x="630" y="420" width="220" height="70"
+          fill="none" stroke="#0055CC" stroke-width="1.5"/>
+    <text x="740" y="460"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16" fill="#0055CC">
+        Dynamics (τ, coupling)
+    </text>
+
+    <!-- Relations from β -->
+    <line x1="500" y1="190" x2="260" y2="260"
+          stroke="#AA0000" stroke-width="1.5"
+          marker-end="url(#arrow-red)" />
+    <text x="360" y="225"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#AA0000">
+        generates
+    </text>
+
+    <line x1="500" y1="190" x2="740" y2="260"
+          stroke="#AA0000" stroke-width="1.5"
+          marker-end="url(#arrow-red)" />
+    <text x="620" y="225"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#AA0000">
+        governs
+    </text>
+
+    <!-- Transformation Operators → Structures -->
+    <line x1="260" y1="330" x2="260" y2="420"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+    <text x="280" y="380"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#0055CC">
+        modify
+    </text>
+
+    <!-- Meta‑Operators → Dynamics -->
+    <line x1="740" y1="330" x2="740" y2="420"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+    <text x="760" y="380"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#0055CC">
+        transform
+    </text>
+
+    <!-- Recursive Operator Relation -->
+    <path d="M740 330
+             C850 250, 850 150, 500 150"
+          fill="none"
+          stroke="#228833"
+          stroke-width="1.5"
+          marker-end="url(#arrow-green)" />
+    <text x="850" y="200"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#228833">
+        recursive operator chain
+    </text>
+
+    <!-- Subtitle -->
+    <text x="500" y="610"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14" fill="#333333">
+        RRK‑7 operator ontology: β, transformation operators, meta‑operators, and their effects on structures and dynamics.
+    </text>
+
+</svg>
