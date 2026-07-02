@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1000" height="650"
+     viewBox="0 0 1000 650">
+
+    <!-- Marker definitions -->
+    <defs>
+        <marker id="arrow-blue"
+                markerWidth="10" markerHeight="10"
+                refX="8" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6 Z" fill="#0055CC"/>
+        </marker>
+
+        <marker id="arrow-green"
+                markerWidth="10" markerHeight="10"
+                refX="8" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6 Z" fill="#228833"/>
+        </marker>
+
+        <marker id="arrow-red"
+                markerWidth="10" markerHeight="10"
+                refX="8" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6 Z" fill="#AA0000"/>
+        </marker>
+    </defs>
+
+    <!-- Background -->
+    <rect x="0" y="0" width="1000" height="650" fill="white"/>
+
+    <!-- Title -->
+    <text x="500" y="50"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="22" fill="#000000">
+        RRK‑7 — System Coherence Map
+    </text>
+
+    <!-- Upper panel border -->
+    <rect x="80" y="90" width="840" height="220"
+          fill="none" stroke="#333333" stroke-width="1.5"/>
+
+    <!-- Lower panel border -->
+    <rect x="80" y="340" width="840" height="240"
+          fill="none" stroke="#333333" stroke-width="1.5"/>
+
+    <!-- Upper panel title -->
+    <text x="500" y="120"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="18">
+        Coherence τ(t) under β modulation
+    </text>
+
+    <!-- Axes -->
+    <line x1="150" y1="280" x2="850" y2="280"
+          stroke="#000000" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+
+    <line x1="150" y1="280" x2="150" y2="140"
+          stroke="#000000" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+
+    <!-- Axis labels -->
+    <text x="850" y="300"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14" text-anchor="end">
+        time t
+    </text>
+
+    <text x="130" y="140"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14" text-anchor="start">
+        coherence τ
+    </text>
+
+    <!-- τ curves -->
+    <!-- Convergent -->
+    <path d="M150 260
+             C300 200, 450 170, 850 160"
+          fill="none" stroke="#0055CC" stroke-width="2"/>
+    <text x="820" y="175"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#0055CC">
+        β > 0.5 (convergent)
+    </text>
+
+    <!-- Neutral -->
+    <path d="M150 220
+             C350 220, 550 220, 850 220"
+          fill="none" stroke="#666666" stroke-width="2"
+          stroke-dasharray="6,4"/>
+    <text x="820" y="210"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#666666">
+        β = 0.5 (neutral)
+    </text>
+
+    <!-- Divergent -->
+    <path d="M150 260
+             C300 280, 450 300, 850 320"
+          fill="none" stroke="#AA0000" stroke-width="2"/>
+    <text x="820" y="305"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#AA0000">
+        β < 0.5 (divergent)
+    </text>
+
+    <!-- Lower panel title -->
+    <text x="500" y="370"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="18">
+        Structural Coupling S₁ → S₂ → S₃ with Recursive Feedback
+    </text>
+
+    <!-- Nodes -->
+    <circle cx="300" cy="460" r="35"
+            fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="300" y="465"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">S₁</text>
+
+    <circle cx="500" cy="460" r="35"
+            fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="500" y="465"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">S₂</text>
+
+    <circle cx="700" cy="460" r="35"
+            fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="700" y="465"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">S₃</text>
+
+    <!-- Coupling arrows -->
+    <line x1="335" y1="460" x2="465" y2="460"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+
+    <line x1="535" y1="460" x2="665" y2="460"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+
+    <!-- Recursive feedback -->
+    <path d="M700 425
+             C700 350, 300 350, 300 425"
+          fill="none"
+          stroke="#228833"
+          stroke-width="1.5"
+          marker-end="url(#arrow-green)" />
+
+    <text x="500" y="340"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#228833">
+        recursive feedback
+    </text>
+
+    <!-- β parameter -->
+    <rect x="460" y="520" width="80" height="50"
+          fill="none" stroke="#AA0000" stroke-width="1.5"/>
+    <text x="500" y="550"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16" fill="#AA0000">
+        β
+    </text>
+
+    <!-- β influence arrow -->
+    <line x1="500" y1="520" x2="500" y2="495"
+          stroke="#AA0000" stroke-width="1.5"
+          marker-end="url(#arrow-red)" />
+
+    <text x="520" y="505"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#AA0000">
+        modulates τ
+    </text>
+
+</svg>

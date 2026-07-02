@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1000" height="600"
+     viewBox="0 0 1000 600">
+
+    <!-- Marker definitions -->
+    <defs>
+        <marker id="arrow-blue"
+                markerWidth="10" markerHeight="10"
+                refX="8" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6 Z" fill="#0055CC"/>
+        </marker>
+
+        <marker id="arrow-green"
+                markerWidth="10" markerHeight="10"
+                refX="8" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6 Z" fill="#228833"/>
+        </marker>
+
+        <marker id="arrow-red"
+                markerWidth="10" markerHeight="10"
+                refX="8" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6 Z" fill="#AA0000"/>
+        </marker>
+    </defs>
+
+    <!-- Background -->
+    <rect x="0" y="0" width="1000" height="600" fill="white"/>
+
+    <!-- Title -->
+    <text x="500" y="50"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="22" fill="#000000">
+        RRK‑7 — Structural Illustration of the β‑Effect
+    </text>
+
+    <!-- Nodes S1, S2, S3 -->
+    <circle cx="250" cy="300" r="35"
+            fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="250" y="305"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">S₁</text>
+
+    <circle cx="500" cy="300" r="35"
+            fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="500" y="305"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">S₂</text>
+
+    <circle cx="750" cy="300" r="35"
+            fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="750" y="305"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">S₃</text>
+
+    <!-- Coupling arrows S1 -> S2 and S2 -> S3 -->
+    <line x1="285" y1="300" x2="465" y2="300"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+    <text x="375" y="285"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#0055CC">
+        coupling
+    </text>
+
+    <line x1="535" y1="300" x2="715" y2="300"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+    <text x="625" y="285"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#0055CC">
+        coupling
+    </text>
+
+    <!-- Recursive feedback S3 -> S1 -->
+    <path d="M750 265
+             C750 150, 250 150, 250 265"
+          fill="none"
+          stroke="#228833"
+          stroke-width="1.5"
+          marker-end="url(#arrow-green)" />
+    <text x="500" y="140"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#228833">
+        recursive feedback
+    </text>
+
+    <!-- β parameter box -->
+    <rect x="430" y="420" width="140" height="70"
+          fill="none" stroke="#AA0000" stroke-width="1.5"/>
+    <text x="500" y="460"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="18" fill="#AA0000">
+        β parameter
+    </text>
+
+    <!-- β influence arrows -->
+    <line x1="500" y1="420" x2="500" y2="335"
+          stroke="#AA0000" stroke-width="1.5"
+          marker-end="url(#arrow-red)" />
+    <text x="520" y="380"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#AA0000">
+        modulates coupling strength
+    </text>
+
+    <!-- Subtitle -->
+    <text x="500" y="560"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14" fill="#333333">
+        β modulates the strength of coupling between S₁, S₂, and S₃, altering the resulting coherence τ.
+    </text>
+
+</svg>

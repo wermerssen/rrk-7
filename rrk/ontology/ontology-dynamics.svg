@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1000" height="600"
+     viewBox="0 0 1000 600">
+
+    <!-- Marker definitions -->
+    <defs>
+        <marker id="arrow-blue"
+                markerWidth="10" markerHeight="10"
+                refX="8" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6 Z" fill="#0055CC"/>
+        </marker>
+
+        <marker id="arrow-green"
+                markerWidth="10" markerHeight="10"
+                refX="8" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6 Z" fill="#228833"/>
+        </marker>
+    </defs>
+
+    <!-- Background -->
+    <rect x="0" y="0" width="1000" height="600" fill="white"/>
+
+    <!-- Title -->
+    <text x="500" y="50"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="22" fill="#000000">
+        RRK‑7 Dynamics Ontology
+    </text>
+
+    <!-- Central concept: Dynamics -->
+    <rect x="430" y="120" width="140" height="60"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="500" y="155"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="18">
+        Dynamics
+    </text>
+
+    <!-- Coherence τ -->
+    <rect x="120" y="260" width="160" height="60"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="200" y="295"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">
+        Coherence τ
+    </text>
+
+    <!-- States S₁…Sₙ -->
+    <rect x="420" y="260" width="160" height="60"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="500" y="290"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">
+        States S₁…Sₙ
+    </text>
+
+    <!-- Coupling -->
+    <rect x="720" y="260" width="160" height="60"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="800" y="290"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">
+        Coupling
+    </text>
+
+    <!-- Feedback -->
+    <rect x="270" y="400" width="160" height="60"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="350" y="430"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">
+        Recursive Feedback
+    </text>
+
+    <!-- Parameter β -->
+    <rect x="570" y="400" width="160" height="60"
+          fill="none" stroke="#000000" stroke-width="1.5"/>
+    <text x="650" y="430"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">
+        Parameter β
+    </text>
+
+    <!-- Relations from Dynamics -->
+    <line x1="500" y1="180" x2="200" y2="260"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+    <text x="320" y="220"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#0055CC">
+        determines
+    </text>
+
+    <line x1="500" y1="180" x2="500" y2="260"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+    <text x="520" y="220"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#0055CC">
+        operates on
+    </text>
+
+    <line x1="500" y1="180" x2="800" y2="260"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+    <text x="680" y="220"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#0055CC">
+        via coupling
+    </text>
+
+    <!-- Feedback relation -->
+    <line x1="500" y1="320" x2="350" y2="400"
+          stroke="#0055CC" stroke-width="1.5"
+          marker-end="url(#arrow-blue)" />
+    <text x="420" y="360"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#0055CC">
+        induces feedback
+    </text>
+
+    <!-- β modulates coupling and coherence -->
+    <line x1="650" y1="400" x2="800" y2="320"
+          stroke="#228833" stroke-width="1.5"
+          marker-end="url(#arrow-green)" />
+    <text x="720" y="360"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#228833">
+        modulates coupling
+    </text>
+
+    <line x1="650" y1="400" x2="200" y2="320"
+          stroke="#228833" stroke-width="1.5"
+          marker-end="url(#arrow-green)" />
+    <text x="430" y="360"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13" fill="#228833">
+        shapes coherence τ
+    </text>
+
+    <!-- Subtitle -->
+    <text x="500" y="560"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14" fill="#333333">
+        Core ontology of RRK‑7 dynamics: coherence τ, states S₁…Sₙ, coupling, feedback, and parameter β.
+    </text>
+
+</svg>

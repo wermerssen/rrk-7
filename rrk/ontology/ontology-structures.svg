@@ -1,0 +1,167 @@
+xml version=1.0 encoding=UTF-8
+svg xmlns=httpwww.w3.org2000svg
+     width=1000 height=650
+     viewBox=0 0 1000 650
+
+    !-- Marker definitions --
+    defs
+        marker id=arrow-blue
+                markerWidth=10 markerHeight=10
+                refX=8 refY=3 orient=auto
+            path d=M0,0 L8,3 L0,6 Z fill=#0055CC
+        marker
+
+        marker id=arrow-green
+                markerWidth=10 markerHeight=10
+                refX=8 refY=3 orient=auto
+            path d=M0,0 L8,3 L0,6 Z fill=#228833
+        marker
+    defs
+
+    !-- Background --
+    rect x=0 y=0 width=1000 height=650 fill=white
+
+    !-- Title --
+    text x=500 y=50
+          text-anchor=middle
+          font-family=Arial, Helvetica, sans-serif
+          font-size=22 fill=#000000
+        RRK‑7 — Structural Ontology
+    text
+
+    !-- Central concept Structures --
+    rect x=430 y=120 width=140 height=70
+          fill=none stroke=#000000 stroke-width=1.5
+    text x=500 y=160
+          text-anchor=middle
+          font-family=Arial, Helvetica, sans-serif
+          font-size=20
+        Structures
+    text
+
+    !-- S-nodes --
+    circle cx=250 cy=300 r=35
+            fill=none stroke=#0055CC stroke-width=1.5
+    text x=250 y=305
+          text-anchor=middle
+          font-family=Arial, Helvetica, sans-serif
+          font-size=16 fill=#0055CC
+        S₁
+    text
+
+    circle cx=500 cy=300 r=35
+            fill=none stroke=#0055CC stroke-width=1.5
+    text x=500 y=305
+          text-anchor=middle
+          font-family=Arial, Helvetica, sans-serif
+          font-size=16 fill=#0055CC
+        S₂
+    text
+
+    circle cx=750 cy=300 r=35
+            fill=none stroke=#0055CC stroke-width=1.5
+    text x=750 y=305
+          text-anchor=middle
+          font-family=Arial, Helvetica, sans-serif
+          font-size=16 fill=#0055CC
+        S₃
+    text
+
+    !-- Structure Types --
+    rect x=150 y=430 width=220 height=70
+          fill=none stroke=#000000 stroke-width=1.5
+    text x=260 y=470
+          text-anchor=middle
+          font-family=Arial, Helvetica, sans-serif
+          font-size=16
+        Structure Types
+    text
+
+    rect x=630 y=430 width=220 height=70
+          fill=none stroke=#000000 stroke-width=1.5
+    text x=740 y=470
+          text-anchor=middle
+          font-family=Arial, Helvetica, sans-serif
+          font-size=16
+        Aggregation
+    text
+
+    !-- Coupling arrows --
+    line x1=285 y1=300 x2=465 y2=300
+          stroke=#0055CC stroke-width=1.5
+          marker-end=url(#arrow-blue) 
+    text x=375 y=285
+          font-family=Arial, Helvetica, sans-serif
+          font-size=13 fill=#0055CC
+        coupling
+    text
+
+    line x1=535 y1=300 x2=715 y2=300
+          stroke=#0055CC stroke-width=1.5
+          marker-end=url(#arrow-blue) 
+    text x=625 y=285
+          font-family=Arial, Helvetica, sans-serif
+          font-size=13 fill=#0055CC
+        coupling
+    text
+
+    !-- Relations from Structures --
+    line x1=500 y1=190 x2=250 y2=265
+          stroke=#0055CC stroke-width=1.5
+          marker-end=url(#arrow-blue) 
+    line x1=500 y1=190 x2=500 y2=265
+          stroke=#0055CC stroke-width=1.5
+          marker-end=url(#arrow-blue) 
+    line x1=500 y1=190 x2=750 y2=265
+          stroke=#0055CC stroke-width=1.5
+          marker-end=url(#arrow-blue) 
+
+    text x=500 y=230
+          text-anchor=middle
+          font-family=Arial, Helvetica, sans-serif
+          font-size=13 fill=#0055CC
+        instantiates S-nodes
+    text
+
+    !-- Structure Types relation --
+    line x1=260 y1=430 x2=260 y2=335
+          stroke=#0055CC stroke-width=1.5
+          marker-end=url(#arrow-blue) 
+    text x=280 y=380
+          font-family=Arial, Helvetica, sans-serif
+          font-size=13 fill=#0055CC
+        defines form
+    text
+
+    !-- Aggregation relation --
+    line x1=740 y1=430 x2=740 y2=335
+          stroke=#0055CC stroke-width=1.5
+          marker-end=url(#arrow-blue) 
+    text x=760 y=380
+          font-family=Arial, Helvetica, sans-serif
+          font-size=13 fill=#0055CC
+        composes structures
+    text
+
+    !-- Recursive structural relation --
+    path d=M750 265
+             C850 200, 850 120, 500 120
+          fill=none
+          stroke=#228833
+          stroke-width=1.5
+          marker-end=url(#arrow-green) 
+    text x=850 y=170
+          font-family=Arial, Helvetica, sans-serif
+          font-size=13 fill=#228833
+        recursive structural path
+    text
+
+    !-- Subtitle --
+    text x=500 y=610
+          text-anchor=middle
+          font-family=Arial, Helvetica, sans-serif
+          font-size=14 fill=#333333
+        RRK‑7 structural ontology S-nodes, structure types, coupling, aggregation, and recursive structure paths.
+    text
+
+svg
